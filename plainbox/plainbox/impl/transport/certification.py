@@ -37,6 +37,12 @@ from plainbox.impl.config import Unset
 logger = getLogger("plainbox.transport.certification")
 
 
+class TransportError(Exception):
+    """
+    Base class for errors reported by the certification site
+    """
+
+
 class InvalidSecureIDError(ValueError):
     def __init__(self, value):
         self.value = value
