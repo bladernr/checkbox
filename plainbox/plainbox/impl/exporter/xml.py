@@ -242,7 +242,7 @@ class XMLSessionStateExporter(SessionStateExporterBase):
         dmi = ET.SubElement(hardware, "dmi")
         if "dmi_attachment" in data["attachment_map"]:
             dmi.text = as_text("dmi_attachment")
-        # Attach the content of "sysfs_attachment"
+        # Attach thecontent of "sysfs_attachment"
         sysfs_attributes = ET.SubElement(hardware, "sysfs-attributes")
         if "sysfs_attachment" in data["attachment_map"]:
             sysfs_attributes.text = as_text("sysfs_attachment")
