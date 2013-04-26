@@ -51,6 +51,7 @@ Table of contents
    :maxdepth: 2
 
    usage.rst
+   config.rst
    author/index.rst
    appdev/index.rst
    dev/index.rst
