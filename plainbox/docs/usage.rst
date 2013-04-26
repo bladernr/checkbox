@@ -82,12 +82,12 @@ automated manner. This runs all the jobs from the *sru.whitelist* and sends the
 results to the certification website.
 
 To run SRU tests you will need to know the so-called :term:`Secure ID` of the
-device you are testing. Once you know that all you need to do is run::
+device you are testing. Once you know that all you need to do is run:
 
 .. code-block:: bash
 
-    $ plainbox sru $secure_id submission.xml
+    $ plainbox sru --secure-id=$secure_id --fallback-file=submission.xml
 
-The second argument, submission.xml, is a name of the fallback file that is
+The second argument, submission.xml, is a name of the fall-back file that is
 only created when sending the data to the certification website fails to work
 for any reason.
